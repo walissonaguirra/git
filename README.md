@@ -10,6 +10,7 @@
 - [Boas Mensagens de Commit](docs/boas-mensagens-de-commit.md) 
 
 ---
+<br/>
 
 ### **Git com Github**
 
@@ -21,7 +22,7 @@
   <summary><a> Contribuição de código</a></summary>
 </details>
 
-
+---
 <br/>
 
 ### **Referências**
