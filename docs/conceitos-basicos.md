@@ -1,30 +1,48 @@
-# Visão Geral <img src="../images/Git_icon.png" width="10%" height="10%" align="right" valign="center"/> 
+# Git em palavras simples
+ <img src="../images/Git_icon.png" width="10%" height="10%" align="right" valign="center"/> 
 
-Na imagem abaixo você vê quatro caixas. Um delas fica sozinho, enquanto os outros três estão agrupados no que chamarei de **Ambiente de Desenvolvimento**.
+### Arquivo OU Blob
+Todo o conteúdo de um arquivo é armazenado em uma coisa chamada blob. Quando um arquivo é alterado, um novo blob armazenará o arquivo completo com todas as novas alterações. Blob é uma das unidades básicas de armazenamento do Git. Outros tipos de unidades/objetos são Commit e Tree.
 
-![imagem0](https://github.com/UnseenWizzard/git_training/raw/master/img/components.png)
+![Um blob armazena o conteúdo do arquivo](https://xosh.org/blog/img_git/blob.png)
+<p aling="center">Um blob armazena o conteúdo do arquivo</p>
+<br/>
 
-Começaremos com caixa que está sozinha. O **Repositório Remoto** é para onde você envia suas alterações quando deseja compartilhá-las com outras pessoas e de onde você obtém as alterações. Se você já usou outros sistemas de controle de versão, não há nada de interessante nisso.
+### HASH
+de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3. Você vê uma string estranha semelhante ou sua forma abreviada com (primeiros caracteres) em todo o git. Isto é hash( SHA1 ). Um hash pode apontar para um blob, um commit ou uma árvore. São 40 caracteres, mas apenas alguns são suficientes para identificar um commit. Por exemplo, o GitHub mostra os primeiros 10 caracteres.
 
-O **Ambiente de Desenvolvimento** é o que você tem em sua máquina local. As três partes são seu **Diretório de Trabalho** a **Área de Stageing** e o **Repositório Local**, Aprenderemos mais sobre elas à medida que começarmos a usar o Git.
+![Um Hash para cada unidade básica](https://xosh.org/blog/img_git/hash.png)
+<p aling="center">Um Hash para cada unidade básica</p>
 
-Escolha um local onde deseja criar o seu **Ambiente de Desenvolvimento**. Basta ir até sua pasta pessoal ou onde quiser colocar seus projetos. Você não precisa criar uma nova pasta ainda.
+### Tree
 
-### Obtendo um repositório remoto
-Agora vamos baixa o conteúdo de um **Repositório Remoto** sua máquina local. Sugiro que usemos este repositorio https://github.com/UnseenWizzard/git_training.git.
+Os arquivos são sempre armazenados em algum diretório ou pasta. As pastas também podem conter mais diretórios. Da mesma forma, um `tree` em git representa diretórios para blobs e mais tree's.
 
-Mas para acompanha esté post será necessário que você leve as alterações feitas em seu **Ambiente de Desenvolvimento** de volta para o **Repositorio Remoto**, e o Github não permite que alguém apenas faça isso no repositório de qualquer pessoa, então primeiro faça um fork do repositorio.
+Sempre há uma tree na raiz, apontando para a tree que contém coisas.
 
-Agora que você tem uma cópia do meu **Repositório Remoto**, é hora de colocá-lo em sua máquina.
+![Uma árvore armazena de blob's e tree's](https://xosh.org/blog/img_git/hash.png)
+<p aling="center">Uma árvore armazena de blob's e tree's</p>
 
-Para isso usaremos o comando:
-```sh
-git clone https://github.com/{YOUR USERNAME}/git_training.git
-```
+### Commit
+Agora digamos que você tenha dois arquivos. Você deseja salvá-los de uma forma que possa voltar a eles exatamente no mesmo estado a qualquer momento mais tarde. Quando você salva um bloco de alterações dele com o git, um commit criado apontando para a árvore com dois blobs (vamos chamá-los de blob1 e blob2). Cada commit tem seu próprio hash e também salva sua mensagem, timestamp de data/hora e suas informações.
 
-Como você pode ver no diagrama abaixo, isso copia o **Repositório Remoto** em dois locais, seu **Diretório de Trabalho** e o **Repositório Local**. Agora você vê como o Git é um controle de versão distribuído. O **Repositório Local** é uma cópia do Remoto e funciona exatamente como ele. A única diferença é que você não compartilha com ninguém.
+![Um commit aponta para a árvore](https://xosh.org/blog/img_git/commit1.png)
+<p aling="center">Um commit aponta para a árvore</p>
 
-O comando `git clone` deve ter criado uma pasta git_training em sua parta atual
+Quando você altera um arquivo (blob1) e faz um commit, o git armazenará o arquivo completo novamente em um novo blob (blob1c). Uma nova árvore é criada com um novo hash apontando para blob2 e o novo blob1c. Agora seu repositório git possui as duas versões de um arquivo.
 
-![imagem1](https://github.com/UnseenWizzard/git_training/raw/master/img/clone.png)
+![Para cada mudança há um novo blob e uma nova tree](https://xosh.org/blog/img_git/commit2.png)
+<p aling="center">Para cada mudança há um novo blob e uma nova tree</p>
+
+_Check in = Faça um commit_<br/>
+Check-in é simplesmente outro nome para fazer um commit no repositório.
+
+_Check out = Carregar um commit_<br/>
+Check out é o processo de carregar um commit do repositório
+
+### Diretório de trabalho
+Este é o diretório git no qual você está trabalhando. Quando você faz check-out de um commit, todo o seu diretório com todos os arquivos é alterado/substituído para corresponder a esse commit (exceto arquivos ignorados) .
+
+### Estágio OU Índice
+O Índice é o próximo commit proposto. É um buffer antes do commit real. É basicamente uma plataforma de carregamento onde você determina quais alterações serão enviadas. Como o diretório de trabalho e o que é salvo pelo Git são essencialmente dissociados, isso permite ao desenvolvedor construir seus commits da maneira que desejar. Você pode até preparar uma única linha individual de suas muitas alterações e apenas confirmá-la.
 
