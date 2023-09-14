@@ -4,13 +4,21 @@
 ![learning](https://img.shields.io/badge/Git-learning-green.svg)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fwalissonaguirra%2Fgit&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
-### **Fundamentos de Git**
-- [Conceitos Básicos](docs/conceitos-basicos.md) 
+**Referências e dicas de Git**
+- [Uma Referência de dicas do github git](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet/)
+- [Uma Referência Visual do Git](https://marklodato.github.io/visual-git-guide/index-pt.html#technical-notes)
+- [Uma Referência Interativa de Git](https://ndpsoftware.com/git-cheatsheet.html#loc=index;)
+
+**Youtube Videos**
+- [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
+- [Usando Git Direito | Limpando seus Commits!](https://www.youtube.com/watch?v=6OokP-NE49k&t=1347s)
+- [ENTENDENDO de vez como funciona do MELHOR E MAIS VISUAL jeito possível](https://www.youtube.com/watch?v=4-tfJ-ZyA0Q)
+
+<!-- - [Conceitos Básicos](docs/conceitos-basicos.md) 
 - [Comandos Básicos](docs/comandos-basicos.md) 
-- [Boas Mensagens de Commit](docs/boas-mensagens-de-commit.md) 
+- [Boas Mensagens de Commit](docs/boas-mensagens-de-commit.md)  -->
 
----
-
+<!-- 
 ### **Git com Github**
 
 <details>	
@@ -23,4 +31,4 @@
 
 ---
 
-### **Referências**
+### **Referências** -->
