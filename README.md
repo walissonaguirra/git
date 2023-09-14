@@ -5,14 +5,15 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fwalissonaguirra%2Fgit&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
 **Referências e dicas de Git**
-- [Uma Referência de dicas do github git](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet/)
+- [Uma Referência de dicas do Github & Git](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet/)
+- [Uma ideia para ensinar Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 - [Uma Referência Visual do Git](https://marklodato.github.io/visual-git-guide/index-pt.html#technical-notes)
-- [Uma Referência Interativa de Git](https://ndpsoftware.com/git-cheatsheet.html#loc=index;)
 
 **Youtube Videos**
+- [ENTENDENDO de vez como funciona do MELHOR E MAIS VISUAL jeito possível](https://www.youtube.com/watch?v=4-tfJ-ZyA0Q)
 - [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
 - [Usando Git Direito | Limpando seus Commits!](https://www.youtube.com/watch?v=6OokP-NE49k&t=1347s)
-- [ENTENDENDO de vez como funciona do MELHOR E MAIS VISUAL jeito possível](https://www.youtube.com/watch?v=4-tfJ-ZyA0Q)
+- [Websérie: Git e Github para sobrevivência | com DevSoutinho](https://youtube.com/playlist?list=PLh2Y_pKOa4Uf-cUQOVNGlz_GVHx8QYoE6&si=Uv7pxfg435eUbQQg)
 
 <!-- - [Conceitos Básicos](docs/conceitos-basicos.md) 
 - [Comandos Básicos](docs/comandos-basicos.md) 
