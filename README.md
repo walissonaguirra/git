@@ -10,26 +10,7 @@
 - [Uma Referência Visual do Git](https://marklodato.github.io/visual-git-guide/index-pt.html#technical-notes)
 
 **Youtube Videos**
-- [ENTENDENDO de vez como funciona do MELHOR E MAIS VISUAL jeito possível](https://www.youtube.com/watch?v=4-tfJ-ZyA0Q)
-- [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
-- [Usando Git Direito | Limpando seus Commits!](https://www.youtube.com/watch?v=6OokP-NE49k&t=1347s)
-- [Websérie: Git e Github para sobrevivência | com DevSoutinho](https://youtube.com/playlist?list=PLh2Y_pKOa4Uf-cUQOVNGlz_GVHx8QYoE6&si=Uv7pxfg435eUbQQg)
-
-<!-- - [Conceitos Básicos](docs/conceitos-basicos.md) 
-- [Comandos Básicos](docs/comandos-basicos.md) 
-- [Boas Mensagens de Commit](docs/boas-mensagens-de-commit.md)  -->
-
-<!-- 
-### **Git com Github**
-
-<details>	
-  <summary><a> Github Básico</a></summary>
-</details>
-
-<details>	
-  <summary><a> Contribuição de código</a></summary>
-</details>
-
----
-
-### **Referências** -->
+- [Básico] [Websérie: Git e Github para sobrevivência | com DevSoutinho](https://youtube.com/playlist?list=PLh2Y_pKOa4Uf-cUQOVNGlz_GVHx8QYoE6&si=Uv7pxfg435eUbQQg)
+- [Básico] [ENTENDENDO de vez como funciona do MELHOR E MAIS VISUAL jeito possível](https://www.youtube.com/watch?v=4-tfJ-ZyA0Q)
+- [Avançado] [Usando Git Direito | Limpando seus Commits!](https://www.youtube.com/watch?v=6OokP-NE49k&t=1347s)
+- [Avançado] [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
